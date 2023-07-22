@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- This trotorial is about SEO Fieldset Legend Label DataList -->
+<html>
+    <head>
+        <!-- SEO -->
+        <title>A website on myself</title> <!--Title-->
+        <meta name="description" content="This is only for learning purpose" />  <!--Description -->
+        <meta name="keywords" content="html,webdevelopment,frontend,fullstack" />  <!--keywords -->
+        <link name="canonical" content="hello.html" />      <!--canonical -->
+        <meta name="robots" content="index follow" />       <!--robots -->
+        <!-- CSS -->
+        <style>
+            .submit{
+                background-color: green;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>  
+        <!-- Form -->
+        <form action="submit.php" method="GET/POST">
+            <fieldset>
+                <legend>This section is about Forms</legend>
+                <label for="first_name">First Name </label>
+                    <!-- Text -->
+                <input type="text" name="first_name" placeholder="Enter your name" id="first_name"><br> <br>
+                <label for="text">Text</label>
+                    <!-- TEXT -->
+                <input type="text" name="text" placeholder="Enter any random text" id="text"> <br> <br>
+                <label for="submit">Submit Button</label>
+                    <!-- SUBMIT -->
+                <input type="submit" class="submit" > <br> <br>
+                    <!-- COLOR -->
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color"> <br> <br>
+                    <!-- DATE -->
+                <label for="date">Date</label>
+                <input type="date" id="date"> <br><br>
+                    <!-- Email -->
+                <label for="email">E-Mail</label>
+                <input type="email" id="email"> <br> <br>
+                    <!-- Hidden -->
+                <label for="hidden">Hidden</label>
+                <input type="hidden" id="hidden" value="password"><br><br>
+                    <!-- Number -->
+                <label for="Mobile_no"> Mobile Number</label>
+                <input type="number" id="Mobile_no" name="Mobile_no"><br><br>
+                    <!-- Time -->
+                <label for="time">Time</label>
+                <input type="time" id="time" value="time"><br><br>
+                    <!-- Passoword -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"><br><br>
+                    <!-- Reset -->
+                <label for="reset">Reset</label>
+                <input type="reset" id="reset" class="submit" value="RESET" name="reset"><br><br>
+                    <!-- URL -->
+                <label for="url">Enter URL</label>
+                <input type="url" id="url" name="url"><br><br>  
+                    <!-- Range -->
+                <label for="range">Range</label>
+                <input type="range" min="10" max="1000" id="range">
+            </fieldset>
+            <fieldset>
+                <input type="submit" class="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>

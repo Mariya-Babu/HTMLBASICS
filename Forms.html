@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Assignment</title>
+        <meta name="description" content="This is Form Assignment" />
+        <meta name="keywords" content="Form,Assignment,frontend,html,forms" />
+        <meta name="robots" content="index follow" />
+        <link rel="stylesheet" href="form_style.css" type="text/css" />
+        
+    </head>
+    <body>
+        <center>
+            <form method="GET/POST" action="sample.php">
+                <!-- Forms-1 -->
+                <table border="1">
+                    <tr>
+                        <th colspan="2">Rigestratio From</th>
+                    </tr>
+                    <tr>
+                        <td>Student Name</td>
+                        <td><input type="text" name="Student_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name</td>
+                        <td><input type="text" name="Father_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Name</td>
+                        <td><input type="text" name="Mother_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" name="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><label for="male">Male</label><input type="radio" id="male" name="gender"><label for="Female">Female</label><input type="radio" id="Female" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No.</td>
+                        <td><input type="number" name="Mobile_no"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea name="address" id="address" cols="20" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><input type="text" name="state"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" class="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+        <br><br>
+        <p><center>Assignment 4</center></p>
+        <form action="sample.php" method="get">
+            <fieldset>
+                <legend>Employee Details</legend>
+                <center>
+                    <h1>Employee Regisration Form</h1>
+                    <h3>Computer Assignment 2020</h3>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td> 
+                                <input type="radio" name="gender" checked>Mr.
+                                <input type="radio" name="gender">Mrs.
+                                <input type="radio" name="gender">Ms.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="first_name">First Name</label></td>
+                            <td><input type="text" id="first_name" placeholder="Enter Your First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="last_name">Last Name</label></td>
+                            <td><input type="text" id="last_name" placeholder="Enter Your Last Name" id="last_name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email1">Mail Address1</label></td>
+                            <td><input type="email" name="email1" id="email1"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email2">Mail Address2</label></td>
+                            <td><input type="email" name="email2" id="email2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cty">City</label></td>
+                            <td><input type="text" id="cty" name="city" list="city"></td>
+                            <datalist id="ciyt">
+                                <option value="Hyderabad">
+                                <option value="Chennai">
+                                <option value="Kolkatha">
+                                <option value="Mumbai">
+                                <option value="Delhi">
+                                <option value="Bangloor">
+                            </datalist>
+                        </tr>
+                        <tr>
+                            <td><label for="state">State</label></td>
+                            <td>
+                                <select name="state" id="state">
+                                    <optgroup label="State">
+                                        <option value="TamilNadu">TamilNadu</option>
+                                        <option value="AP">AP</option>
+                                        <option value="TS">TS</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Assam">Assam</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="zip">Zip</label></td>
+                            <td><input type="text" id="zip" name="zip"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="photo">Upload Photo</label></td>
+                            <td><input type="file" id="photo" name="file-photo"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile">Mobile No</label></td>
+                            <td><input type="number" name="mobile_no" id="mobile" placeholder="+91"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="language">Languages Known</label></td>
+                            <td>
+                                <input type="checkbox" name="language">C-Language <br>
+                                <input type="checkbox" name="language">Python <br>
+                                <input type="checkbox" name="language">Java <br>
+                                <input type="checkbox" name="language">C++ <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="add-info">Additional Information</label></td>
+                            <td>
+                                <textarea name="add-info" id="add-info" cols="50" rows="10" placeholder="Optional"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" name="submit" class="button">
+                                <input type="reset" name="reset" class="button">
+                            </td> 
+                        </tr>
+                    </table>
+                </center>
+            </fieldset>
+        </form>
+        <!-- Forms-2 -->
+        <center>
+        <form action="sample.php" method="get/post" id="form-2">
+            <fieldset >
+                <header>
+                    <h1>JobSearch.<span id="head">com</span></h1>
+                </header>
+                <div id="top">
+                    <h1>Create Your Account</h1>
+                    <p style="color: red;">*Required Information</p>
+                </div>
+                <!-- Basic Information -->
+               <div class="cont">
+                <h3 class="title">Basic Information</h3>
+                <table>
+                    <tr>
+                        <td><label for="Email">Email ^</label></td>
+                        <td><input type="Email" name="Email" id="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password1">Password ^</label></td>
+                        <td><input type="password" id="Password1" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password2">Rtype Password ^</label></td>
+                        <td><input type="password" name="password" id="password2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="first_name">First Name ^</label></td>
+                        <td><input type="text" id="first_name" name="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last_name">Last Name ^</label></td>
+                        <td><input type="text" name="last_name" id="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone_no">Phone Number ^</label></td>
+                        <td><input type="number" name="phone_no" id="phone_no" placeholder="999-999-999"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address ^</label></td>
+                        <td><input type="text" name="address" id="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City ^</label></td>
+                        <td><input type="text" name="city" id="city"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="province">Province</label></td>
+                        <td>
+                            <select name="province" id="province">
+                                <optgroup label="province">
+                                    <option value="washington">Washington</option>
+                                    <option value="newyork">Newyork</option>
+                                    <option value="losangles">Losangles</option>
+                                    <option value="losvagas">Losvagas</option>
+                                    <option value="xyz">XYZ</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country ^</label></td>
+                        <td><input type="text" name="country" id="country"></td>
+                    </tr>
+                </table>
+               </div> 
+               <!-- Education Info -->
+               <div class="cont">
+                    <h3 class="title">Education</h3>
+                    <table>
+                        <tr>
+                            <td><label for="school">School</label></td>
+                            <td><input type="text" name="school" id="school"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="program">Program</label></td>
+                            <td><input type="text" name="program" id="program"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><label for="edu">Education Level</label></td>
+                            <td>
+                                <select name="edu" id="edu">
+                                    <option value="10th">10<sup>th</sup></option>
+                                    <option value="inter">InterMidiate</option>
+                                    <option value="under">UnderGraduate</option>
+                                    <option value="post">PostGraduate</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Education Status</legend>
+                                    <input type="radio" name="edus">Graduate <br>
+                                    <input type="radio" name="edus">Current Enrolled <br>
+                                    <input type="radio" name="edus">Did not Graduate
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="grad">Graduation Date</label></td>
+                            <td><input type="date" name="grad_name" id="grad"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Work Experience -->
+                <div class="cont">
+                    <h3 class="title">Wrok Experience</h3>
+                    <table>
+                        <tr>
+                            <td><label for="employer">Employer</label></td>
+                            <td><input type="text" name="employer" id="employer"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="job_title">Job Title:</label></td>
+                            <td><input type="text" name="job_title" id="job_title"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="job_duty">Job Duty</label></td>
+                            <td>
+                                <textarea name="job_duty" id="job_duty" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="exp">Worked Year :</label></td>
+                            <td><input type="number" name="number" id="exp"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Attachments -->
+                <div class="cont">
+                    <h3 class="title">Attachments</h3>
+                    <table>
+                        <tr>
+                            <td><label for="atch">Attachments :</label></td>
+                            <td><input type="file" value="Browser"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="buttons">
+                    <input type="reset" class="button"> &nbsp;&nbsp;
+                    <input type="submit" class="button" value="Apply">
+                </div>
+            </fieldset>
+        </form>
+        <!-- Form-3 -->
+        <form action="sample.php" method="get/post">
+            <fieldset>
+                <h1>Edit Your Details</h1>
+                <table>
+                    <tr>
+                        <td><label for="Username">Username:</label></td>
+                        <td><input type="text" id="Username" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="full_name">Full Name:</label></td>
+                        <td><input type="text" name="username" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone_number">Phone Number:</label></td>
+                        <td><input type="number" id="phone_number" name="phone_number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Address">Address:</label></td>
+                        <td><input type="text" id="address" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="branch">Hotel Branch:</label></td>
+                        <td>
+                            <select name="branch" id="branch">
+                                <option value="ts">Telangana</option>
+                                <option value="ap">Andhra Pradesh</option>
+                                <option value="tn">Tamil Nadu</option>
+                                <option value="gt">Gujarat</option>
+                                <option value="del">Delhi</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" class="button"> &nbsp;&nbsp;
+                <input type="reset" name="reset" class="button">
+            </fieldset>
+        </form>
+        <!-- Form-4 -->
+        <form action="sample.php" method="get/post">
+            <fieldset>
+                <p>user Info form:</p>
+                <hr>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Smith" list="names"> <br><br>
+                <datalist id="names">
+                    <option value="Vinod">
+                    <option value="Siva">
+                    <option value="Sankar">
+                    <option value="Teja">
+                    <option value="Gopi">
+                    <option value="Naredra">
+                    <option value="Waricoo">
+                </datalist>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="****"> <br><br>
+                <label for="party">Party:</label>
+                <input type="radio" name="party" id="party"><label>Democrat</label> <br>
+                <input type="radio" name="party" id="party"><label>Republican</label><br><br>
+                <label for="state">State:</label><br>
+                <select name="state" id="state">
+                    <option value="ap">Andra Pradesh</option>
+                    <option value="ts">Telengana</option>
+                    <option value="tn">Tamil Nadu</option>
+                    <option value="del">Delhi</option>
+                    <option value="kar">karnataka</option>
+                    <option value="ass">Assam</option>
+                </select><br>
+                <label for="commetns">Comments:</label><br>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Quit spying on me!"></textarea><br>
+                <label for="extra">Send me more information:</label>
+                <input type="checkbox" name="extra" id="extra"><br><br>
+                <input type="submit" name="submit" value="Send Info" class="button"> 
+                <input type="reset" name="reset" value="Clear Form" class="button">
+            </fieldset>
+        </form>
+        <!-- Form-5 -->
+        <form action="sample.php" method="post/get">
+            <fieldset id="fld">
+                <h3>KM Custom HTML Form Example Using AppleScript</h3>
+                <p>(by JMichaelTX)</p>
+                <table border="1" id="tb">
+                    <tr>
+                        <td><b><label for="name">Name:</label></b></td>
+                        <td><input type="text" name="name" id="name" placeholder="John AppleScript"></td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="email">Email:</label></b></td>
+                        <td><input type="email" name="email" id="email" placeholder="Johnny@AppleScript.com"></td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="password">Password:</label></b></td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="appr">Approval Required:</label></b>Click on the button or text to check/uncheck.</td>
+                        <td><input type="checkbox" name="appr" id="appr"></td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="fav">Pick Your Favorite:</label>Click on the botton or text to select.</b></td>
+                        <td>
+                            <input type="radio" name="fav" id="fav">Choice A
+                            <input type="radio" name="fav" id="fav">Choice B
+                            <input type="radio" name="fav" id="fav">Choice C
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="menu">Popup Menu:</label></b></td>
+                        <td>
+                            <select name="menu" id="menu" multiple>
+                                <optgroup label="America">
+                                    <option value="los">Los Angles</option> 
+                                    <option value="new">Newyork</option>
+                                    <option value="wash">Washington</option>
+                                    <option value="tex">Texas</option>
+                                </optgroup>
+                                <optgroup label="India">
+                                    <option value="del">Delhi</option>
+                                    <option value="hyd">Hyderabad</option>
+                                    <option value="kol">Kolkatha</option>
+                                    <option value="chennai">Chennai</option>
+                                    <option value="ben">Benguloor</option>
+                                    <option value="Mum">Mumbai</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><label for="list">List</label></b><br>
+                            Setup Options: <br>
+                            <ul type="disc">
+                                <li>Number of rows to display</li>
+                                <li>Allow Mutli-select</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <select name="list" id="list" size="4">
+                                <option value="ca">California--CA</option>
+                                <option value="co">Colorado</option>
+                                <option value="cn">Connectiut--CN</option>
+                                <option value="da">Dalifornia--DA</option>
+                                <option value="do">Dolorado--DO</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="km">Field Ignored by KM</label></b></td>
+                        <td><input type="number" id="km" value="10384"></td>
+                    </tr>
+                    <tr>
+                        <td><b><label for="add">Text Area</label></b></td>
+                        <td>
+                            <textarea name="add" id="add" cols="30" rows="5">
+                                Now is the time for all good men to come to the aid of their country
+                            </textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br><br> 
+                <input type="submit" name="submit" class="button">  &nbsp;
+                <input type="reset" name="reset" class="button">    &nbsp;
+                <button type="button" class="button">Resize</button>
+            </fieldset>
+        </form>
+        <!-- Form-6 -->
+        <form action="hello.php" method="get/post" id="f-6">
+            <fieldset>
+                <h1>Travel reservation form</h1>
+                <h3>*denotes mandotory</h3>
+                <label for="name">Full Name*:</label><br>
+                <input type="text" name="name" id="name" placeholder="First Name Last Name"><br>
+                <label for="email">Email Address*:</label><br>
+                <input type="email" name="email" id="email" placeholder="Email Address"><br>
+                <label for="package">Select Tour Package*:</label><br>
+                <select name="package" id="package">
+                    <option value="goa">Goa</option>
+                    <option value="agra">Agra</option>
+                    <option value="del">Delhi</option>
+                    <option value="him">Himalaya's</option>
+                    <option value="meriyana">Meriyana Beach</option>
+                    <option value="araku">Araku</option>
+                </select><br>
+                <label for="Arrival">Arrival Date*:</label><br>
+                <input type="date" name="arrival" id="arrival" placeholder="m/d/y"><br>
+                <label for="person">Number of persons*:</label><br>
+                <input type="number" name="person" id="person" placeholder="Unknow_Type"><br>
+                <label for="avail">What would want to avail*:</label><br>
+                Boarding <input type="checkbox" name="avail" id="avail"><br>
+                Fooding  <input type="checkbox" name="avail" id="avail"><br>
+                Sight Seeing  <input type="checkbox" name="avail" id="avail"><br>
+                <label for="coupon_code">Discount Coupon Code:</label><br>
+                <input type="text" name="coupon_code" id="coupon_code" placeholder="Unknow_Type"><br>
+                <label for="terms">Terms and Conditions</label><br>
+                <input type="radio" name="terms" id="terms">I agree <input type="radio" name="terms" id="terms"> I disagree <br>
+                <input type="submit" name="submit" value="Complete reservation" class="button">
+            </fieldset>
+        </form>
+        <!-- Form-7 -->
+        <form action="first.html" method="get/post">
+            <fieldset>
+                <h1>Novell Services Login</h1>
+                <table>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City of</label></td>
+                        <td><input type="text" name="city" id="city"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="employ">Employment</label></td>
+                        <td><input type="text" name="employ" id="employ"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="web_server">Web Server</label></td>
+                        <td>
+                            <select name="web_server" id="web_server" value="--Choose a Server--">
+                                <option value="amazon">Amazone</option>
+                                <option value="facebook">FaceBook</option>
+                                <option value="meta">Meta</option>
+                                <option value="google">Google</option>
+                                <option value="microsoft">Microsoft</option>
+                                <option value="apple">Apple</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="role">Please Specify <br>your role :</label></td>
+                        <td>
+                            <input type="radio" name="role" id="role"> Admine <br>
+                            <input type="radio" name="role" id="role"> Enginner <br>
+                            <input type="radio" name="role" id="role"> Manager <br>
+                            <input type="radio" name="role" id="role"> Guest <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="sign">Single Sign-on <br>to the following</label></td>
+                        <td>
+                            <input type="checkbox" name="sign" id="sign"> Mail <br>
+                            <input type="checkbox" name="sign" id="sign"> Payroll <br>
+                            <input type="checkbox" name="sign" id="sign"> Self-Service <br> 
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" class="button" value="Login"> &nbsp;
+                <input type="reset" name="reset" class="button">
+            </fieldset>
+        </form>
+        <!-- Form-7 -->
+        <form action="hello.php" method="get/post">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td><label for="trip_name">Trip Name</label></td>
+                        <td>
+                            <input type="text" id="trip_name" name="trip_name" list="trip_name">
+                            <datalist id="trip_name">
+                                <option value="Agra">
+                                <option value="Delhi">
+                                <option value="Goa">
+                                <option value="Araku">
+                                <option value="Vizag">
+                                <option value="Hyderabad">
+                                <option value="Bengloor">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="event">Event Type</label></td>
+                        <td>
+                            <select name="event" id="event">
+                                <option value="sur">Surfing</option>
+                                <option value="div">Diving</option>
+                                <option value="sky">SkyDiving</option>
+                                <option value="ska">Skating</option>
+                                <option value="ara">Archary</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="des">Trip <br>Description</label></td>
+                        <td>
+                            <textarea name="des" id="des" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="loc">Trip Location</label></td>
+                        <td><input type="text" name="loc" id="loc"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="depart">Departs</label></td>
+                        <td><input type="text" name="depart" id="departs"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="return">Returns</label></td>
+                        <td><input type="text" name="return" id="return"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="people_count">Number of People</label></td>
+                        <td><input type="text" name="people_count" id="people_count"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="price">Price</label></td>
+                        <td><input type="text" name="price" id="price"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="base_cost">Base Cost</label></td>
+                        <td><input type="text" name="base_cost" id="base_cost"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="permission">Deposit <br>Required</label></td>
+                        <td><input type="checkbox" name="permission" id="permission"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="leader">Trip Leader</label></td>
+                        <td><input type="text" name="leader" id="leader"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">Photo File <br> Name</label></td>
+                        <td><input type="text" name="photo" id="photo"></td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" class="button" value="save">
+                <input type="reset" name="reset" class="button" value="Cancel"> <br>
+            </fieldset>
+        </form>
+        <!-- From-8 -->
+        <form action="hello.php" method="get/post" id="f-8">
+            <fieldset>
+                <legend>Form 8</legend>
+                <h1>XYZ College/School</h1>
+                <h3>Student Registration From</h3>
+                <table>
+                    <tr>
+                        <td><label for="image">Student Image</label></td>
+                        <td><input type="file" id="image" name="image">(less than 5 MB)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Student Name:</label></td>
+                        <td>
+                            <input type="text" name="name" id="name" list="names" placeholer="Full Name">
+                            <datalist id="names">
+                                <option value="Rishi">
+                                <option value="Anandh">
+                                <option value="Surya">
+                                <option value="Pandu">
+                                <option value="Ajay">
+                                <option value="Murari">
+                                <option value="Harsha">
+                                <option value="Hello">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="father">Father's Name:</label></td>
+                        <td><input type="text" name="father" id="father" placeholder="Father's Name">Father's Name:</td>
+                    </tr>
+                    <tr>
+                        <td><label for="mother">Mother's <br> Name:</label></td>
+                        <td><input type="text" name="mother" id="mother" placeholder="Mother's Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            Male <input type="radio" name="gender" id="gender">
+                            Female <input type="radio" name="gender" id="gender">
+                            Other <input type="radio" name="gender" id="gender">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input type="date" name="dob" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="email@xyz.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="level">Level:</label></td>
+                        <td>
+                            <select name="level" id="level">
+                                <option value="primary">Primary School</option>
+                                <option value="hight">HightSchool</option>
+                                <option value="secondary">Secondary School</option>
+                                <option value="under">Under Graduate</option>
+                                <option value="post">Post Graduate</option>
+                                <option value="phd">Phd</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dept">Department:</label></td>
+                        <td>
+                            <select name="dept" id="dept">
+                                <option value="eee">Electrical & Electronic Engineering</option>
+                                <option value="ece">Electronic & Communication Engineering</option>
+                                <option value="cse">Computer Science & Engineering</option>
+                                <option value="civil">Civil</option>
+                                <option value="mech">Mechanical</option>
+                                <option value="chem">Chemical</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Tel/Mobile</label></td>
+                        <td><input type="number" name="tel" id="tel" placeholder="xxx xxx xxx"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <!-- Form-9 -->
+        <form action="form-9.php" method="get/post" id="f-9">
+            <p>This is an exaple of field set</p>
+            <fieldset id="fld-9">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile Number:</label></td>
+                        <td><input type="number" name="mobile" id="mobile" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            Male: <input type="radio" name="gender" id="gender">
+                            Female: <input type="radio" name="gender" id="gender">
+                            Other: <input type="radio" name="gender" id="gender">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="lan">Language</label></td>
+                        <td>
+                            <select name="lan" id="lan">
+                                <option value="cse">Computer Science</option>
+                                <option value="C++">C++</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="javascript">JavaScript</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="zip">Zip Code</label></td>
+                        <td><input type="number" id="zip" name="zip"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="about">About</label></td>
+                        <td>
+                            <textarea name="about" id="about" cols="30" rows="5" placeholder="Writer about yourself...."></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Register" class="button">
+                <input type="reset">
+            </fieldset>
+        </form>
+        </center>
+    </body>
+</html>

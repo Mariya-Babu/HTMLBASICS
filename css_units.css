@@ -1,0 +1,68 @@
+html{
+    font-size: 13px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#p1{
+    border: 2px groove red;
+    width: 500px;
+    height: 30px;
+    cursor: auto;
+}
+#p2{
+    border: 2px solid brown;
+    width: 500pt;
+    height: 25pt;
+    cursor: all-scroll;
+}
+#p3{
+    border: 2px inset blue;
+    width: 50pc;
+    height: 2pc;
+    cursor: cell;
+}
+#p4{
+    border: 2px outset green;
+    width: 8in;
+    height: 0.4in;
+    cursor: progress;
+}
+#p5{
+    border: 2px ridge black;
+    width: 50vw; /* View Port Width */
+    height: 5vh; /*ViewPort Height */
+    cursor: col-resize;
+}
+#p6{
+    border: 2px solid red;
+    width: 30vw;
+    height: 4.5vh;
+    cursor: crosshair;
+}
+#p7{
+    border: 3px dotted yellow;
+    width: 500px;
+    font-size: 20px;
+    cursor: e-resize;
+}
+#p71{
+    border: 2px dashed yellowgreen;
+    width: 1000px;
+    font-size: 1.5em; /* This width multiply 1.5 with parent font-size  = 40px*/ 
+    cursor: alias;
+}
+#p8{
+    border: 3px inset violet;
+    width: 1000px;
+    font-size: 2rem; /* This will muliply 2 with html font-size here we defined html font size on the top of the css code */
+    cursor: grab;
+}
+#p81{
+    border: 3px outset indianred;
+    width: 1000px;
+    height: 50px;
+    font-size: 1em; /* This will multiply 0.7 with it's parent font size here (parent font-size=html font-size * 2 font-size of p81 = 13*2*0.7 = 18.2*/
+    cursor: not-allowed;
+}
